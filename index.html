@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>कुमार आर्ट्स - Flex Print Sasaram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('images/fullbackground.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* ✅ Header GIF */
+    .gif-header {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .gif-header img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .images img {
+      width: 300px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      transition: transform 0.3s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-buttons {
+      margin-top: 15px;
+    }
+
+    .contact-buttons a {
+      margin: 10px;
+      padding: 10px 15px;
+      background: green;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    iframe {
+      border: 0;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Header GIF -->
+  <header class="gif-header">
+    <img src="images/gifimage.gif" alt="Flex Print Animation" />
+  </header>
+
+  <nav>
+    <a href="#about">हमारी जानकारी</a>
+    <a href="#gallery">गैलरी</a>
+    <a href="#contact">संपर्क</a>
+  </nav>
+
+  <section id="about">
+    <h2 style="
+      font-size: 32px;
+      font-weight: bold;
+      text-align: left;
+      background: linear-gradient(to right, #00c3ff, #03017e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 1px 1px 2px #ff0000;
+      margin-bottom: 20px;">
+      हमारी जानकारी
+    </h2>
+
+    <p style="
+      font-weight: bold;
+      color: #b30000;
+      background-color: #ffffcc;
+      padding: 30px;
+      border-radius: 15px;
+      font-size: 24px;
+      line-height: 1.6;
+      box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);">
+      Flex Board, <span style="color: #0066cc;">Hoarding</span>, <span style="color: #009933;">Glow Sign Board</span>, 
+      <span style="color: #cc6600;">Sun Board</span>, Sun Pack, <span style="color: #9900cc;">Vinyl</span>, 
+      Handbill, Poster आदि की प्रिंटिंग और डिजाइनिंग में हमारी विश्वसनीय सेवाएं 
+      <strong>सासाराम (बिहार)</strong> में उपलब्ध हैं।
+    </p>
+  </section>
+
+  <!-- ✅ Proprietor Section -->
+  <section class="owner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; background-color: rgba(255,255,255,0.85); padding: 25px; border-radius: 12px;">
+    <div style="flex: 1; min-width: 160px; text-align: center;">
+      <h2 style="font-size: 24px; font-weight: bold; color: black;">Proprietor</h2>
+      <img src="images/proprietor.jpg" alt="Owner Photo" style="width: 220px; border-radius: 8px;" />
+      <p style="font-weight: bold; font-size: 20px; color: red; margin-top: 8px;">Manoj Kumar</p>
+    </div>
+
+    <div style="flex: 1; min-width: 260px; text-align: center;">
+      <img src="images/flexprint.jpg" alt="Flex Print Banner" style="width: 90%; max-width: 500px; border-radius: 8px;" />
+      <p style="font-size: 22px; font-weight: bold; color: #ff000d; margin-top: 10px;">FASTEST FLEX PRINT</p>
+    </div>
+  </section>
+
+  <!-- ✅ Gallery Section -->
+  <section id="gallery" style="background-color: rgba(1, 109, 15, 0.8); border-radius: 12px; padding: 20px; margin-top: 20px;">
+    <h2 style="
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #ffee00, #ffe600);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;">
+      गैलरी
+    </h2>
+
+    <div class="images">
+      <img src="images/shop1.jpg" alt="Shop Photo 1" />
+      <img src="images/shop2.jpg" alt="Shop Photo 2" />
+      <img src="images/shop3.jpg" alt="Shop Photo 3" />
+      <img src="images/shop4.jpeg" alt="Shop Photo 4" />
+      <img src="images/repairing.jpg" alt="Repairing Machine" />
+    </div>
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact" style="background-color: rgba(255,255,255,0.95); padding: 30px; border-radius: 15px; margin: 20px;">
+    <h2 style="font-size: 28px; font-weight: bold; color: #003366; margin-bottom: 20px;">संपर्क</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
+      <div style="flex: 1; min-width: 260px;">
+        <p style="font-size: 18px; line-height: 1.8; color: red; font-weight: bold;">
+          📍 पता:<br>
+          <span style="font-size: 20px;">
+            नयाका गांव,<br>
+            जी.टी रोड (कुमार सिनेमा हॉल),<br>
+            सासाराम (रोहतास), बिहार - 821115
+          </span>
+        </p>
+        <p style="font-size: 18px; color: #222;">
+          📞 <strong>मोबाइल:</strong> <a href="tel:+919122164355" style="color: #0066cc;">9122164355</a><br>
+          📧 <strong>ईमेल:</strong> <a href="mailto:kumararts11@gmail.com" style="color: #0066cc;">kumararts11@gmail.com</a>
+        </p>
+        <div class="contact-buttons">
+          <a href="https://wa.me/919122164355" target="_blank">📱 WhatsApp करें</a>
+          <a href="tel:+919122164355">📞 कॉल करें</a>
+        </div>
+      </div>
+
+      <div style="flex: 1; min-width: 260px; text-align: center;">
+        <h3 style="font-size: 20px; color: #333;">QR Code (PhonePe)</h3>
+        <img src="images/qr_code.jpg" alt="QR Code" width="220" style="border-radius: 10px;" />
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
